@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.TestMapper">
+
+
+    <!--    데이터 로드 -->
+    <select id="getTestData" resultType="TestDto">
+        select * from test_table
+    </select>
+
+    <!--    <insert id="insertBaseConfig" parameterType="BaseConfigReq">-->
+    <!--        INSERT INTO edt_base_config-->
+    <!--        (-->
+    <!--        company_name-->
+    <!--        , site_title-->
+    <!--        , ceo_name-->
+    <!--        , business_no-->
+    <!--        , company_seq-->
+    <!--        , company_address-->
+    <!--        , tel-->
+    <!--        , email-->
+    <!--        , copyright-->
+    <!--        , logo_image-->
+    <!--        , favicon-->
+    <!--        , write_time-->
+    <!--        , logo_image_org_nm-->
+    <!--        , favicon_org_nm-->
+    <!--        )-->
+    <!--        VALUES-->
+    <!--        (-->
+    <!--        #{company_name}-->
+    <!--        , #{site_title}-->
+    <!--        , #{ceo_name}-->
+    <!--        , #{business_no}-->
+    <!--        , #{company_seq}-->
+    <!--        , #{company_address}-->
+    <!--        , #{tel}-->
+    <!--        , #{email}-->
+    <!--        , #{copyright}-->
+    <!--        , #{logo_image}-->
+    <!--        , #{favicon}-->
+    <!--        , CURRENT_TIME-->
+    <!--        , #{logo_image_org_nm}-->
+    <!--        , #{favicon_org_nm}-->
+    <!--        )-->
+    <!--    </insert>-->
+
+    <!--    <update id="updateBaseConfig" parameterType="BaseConfigReq">-->
+    <!--        /* base_config 업데이트 */-->
+    <!--        UPDATE-->
+    <!--        edt_base_config-->
+    <!--        SET-->
+    <!--        company_name = #{company_name}-->
+    <!--        , site_title = #{site_title}-->
+    <!--        , ceo_name = #{ceo_name}-->
+    <!--        , business_no = #{business_no}-->
+    <!--        , company_seq = #{company_seq}-->
+    <!--        , company_address = #{company_address}-->
+    <!--        , tel = #{tel}-->
+    <!--        , email = #{email}-->
+    <!--        , copyright = #{copyright}-->
+    <!--        , logo_image = #{logo_image}-->
+    <!--        , favicon = #{favicon}-->
+    <!--        , write_time = CURRENT_TIME-->
+    <!--        , logo_image_org_nm = #{logo_image_org_nm}-->
+    <!--        , favicon_org_nm = #{favicon_org_nm}-->
+    <!--        WHERE-->
+    <!--        company_seq = #{company_seq}-->
+    <!--    </update>-->
+
+
+    <!--    <select id="selectCompanySeq" parameterType="String" resultType="Integer">-->
+    <!--        /* company_seq 조회 */-->
+    <!--        SELECT-->
+    <!--        company_seq-->
+    <!--        FROM-->
+    <!--        edt_admin-->
+    <!--        WHERE-->
+    <!--        id = #{sessionId}-->
+    <!--    </select>-->
+
+
+    <!--    <select id="selectBaseData" parameterType="String" resultType="Integer">-->
+    <!--        SELECT-->
+    <!--        count(*)-->
+    <!--        FROM-->
+    <!--        edt_base_config-->
+    <!--        WHERE-->
+    <!--        company_seq= #{companySeq}-->
+    <!--    </select>-->
+
+</mapper>
